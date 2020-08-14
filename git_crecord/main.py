@@ -176,7 +176,7 @@ def main():
     parser.add_argument('--debug', action='store_const', const=2, dest='verbose', help='be debuggingly verbose')
     parser.add_argument('--cleanup', default=None, help=argparse.SUPPRESS)
     parser.add_argument('--quiet', default=False, action='store_true', help='pass --quiet to git commit')
-    parser.add_argument('--no-confirm', default=False, action='store_true', help='don\'t show confirmation prompt after selecting changes')
+    parser.add_argument('--confirm', default=False, action='store_true', help='show confirmation prompt after selecting changes')
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--cached', '--staged', action='store_true', default=False, help=argparse.SUPPRESS)
     group.add_argument('--index', action='store_true', default=False, help=argparse.SUPPRESS)

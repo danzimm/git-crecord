@@ -1052,7 +1052,7 @@ The following are valid keystrokes:
     def confirmcommit(self, review=False):
         """Ask for 'Y' to be pressed to confirm selected. Return True if
         confirmed."""
-        if self.opts['no_confirm']:
+        if not self.opts['confirm']:
             return True
 
         if review:
